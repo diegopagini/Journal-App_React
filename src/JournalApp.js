@@ -1,11 +1,10 @@
 /** @format */
 
 import React from 'react';
-import { AppRouter } from './routers/AppRouter';
-
-// Redux
 import { Provider } from 'react-redux';
+
 import { store } from './store/store';
+import { AppRouter } from './routers/AppRouter';
 
 export const JournalApp = () => {
 	return (

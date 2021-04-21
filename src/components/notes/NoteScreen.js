@@ -7,6 +7,7 @@ export const NoteScreen = () => {
 	return (
 		<div className='notes__main-content'>
 			<NotesAppBar />
+
 			<div className='notes__content'>
 				<input
 					type='text'
@@ -14,13 +15,15 @@ export const NoteScreen = () => {
 					className='notes__title-input'
 					autoComplete='off'
 				/>
+
 				<textarea
 					placeholder='What happened today'
 					className='notes__textarea'
 				></textarea>
+
 				<div className='notes__image'>
 					<img
-						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LJv-rhX-vP9i6bIrEXL1kYwc1GIAAwaC4A&usqp=CAU'
+						src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg'
 						alt='imagen'
 					/>
 				</div>

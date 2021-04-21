@@ -9,14 +9,15 @@ export const JournalEntry = () => {
 				className='journal__entry-picture'
 				style={{
 					backgroundSize: 'cover',
-					backgroundImage: `url(https://1.bp.blogspot.com/-JREhSKN8sMM/VmH2B-jmFXI/AAAAAAAAIzg/ScNtA185M88/s1600/02273%2Bpaisajes01.jpg)`,
+					backgroundImage:
+						'url(https://earthsky.org/upl/2018/12/comet-wirtanen-Jack-Fusco-dec-2018-Anza-Borrego-desert-CA-e1544613895713.jpg)',
 				}}
 			></div>
 
 			<div className='journal__entry-body'>
 				<p className='journal__entry-title'>Un nuevo día</p>
 				<p className='journal__entry-content'>
-					Sit aliqua officia et velit deserunt nisi aliquip duis veniam cillum.
+					Reprehenderit id in duis consectetur deserunt veniam fugiat.
 				</p>
 			</div>
 

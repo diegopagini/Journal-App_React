@@ -15,7 +15,7 @@
 	}
 
 	&:hover {
-		color: darken($color: white, $amount: 15);
+		color: darken($color: white, $amount: 10);
 	}
 }
 
@@ -26,6 +26,7 @@
 	&:disabled {
 		background-color: lighten($color: $primary, $amount: 15);
 	}
+
 	&:hover {
 		background-color: darken($color: $primary, $amount: 15);
 	}

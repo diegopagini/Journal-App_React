@@ -18,10 +18,10 @@
 .journal__sidebar-navbar {
 	display: flex;
 	justify-content: space-between;
+}
 
-	h3 {
-		font-weight: lighter;
-	}
+.journal__sidebar-navbar h3 {
+	font-weight: lighter;
 }
 
 .journal__new-entry {
@@ -43,7 +43,7 @@
 .journal__entries {
 	flex: 1 1 auto;
 	margin-top: 30px;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .journal__entry {
@@ -60,24 +60,27 @@
 	width: 75px;
 }
 
-.jounral__entry-body {
+.journal__entry-body {
 	padding: 10px;
 }
-.jounral__entry-title {
+
+.journal__entry-title {
 	font-size: 14px;
 	font-weight: bold;
 }
-.jounral__entry-content {
+
+.journal__entry-content {
 	font-size: 10px;
 }
+
 .journal__entry-date-box {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 5px;
+}
 
-	span {
-		font-size: 12px;
-	}
+.journal__entry-date-box span {
+	font-size: 12px;
 }
