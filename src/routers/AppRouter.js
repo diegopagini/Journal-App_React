@@ -17,6 +17,7 @@ export const AppRouter = () => {
 	const dispatch = useDispatch();
 
 	const [checking, setChecking] = useState(true);
+
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 	useEffect(() => {
