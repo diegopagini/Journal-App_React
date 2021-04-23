@@ -11,10 +11,8 @@ import { PrivateRoute } from './PrivateRoute';
 
 import { JournalScreen } from '../components/journal/JournalScreen';
 import { login } from '../actions/auth';
-import { setNotes } from '../actions/notes';
+import { startLoadingNotes } from '../actions/notes';
 import { PublicRoute } from './PublicRoute';
-
-import { loadNotes } from '../helpers/loadNotes';
 
 export const AppRouter = () => {
 	const dispatch = useDispatch();
@@ -24,13 +22,12 @@ export const AppRouter = () => {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 	useEffect(() => {
-		firebase.auth().onAuthStateChanged(async (user) => {
+		firebase.auth().onAuthStateChanged((user) => {
 			if (user?.uid) {
 				dispatch(login(user.uid, user.displayName));
 				setIsLoggedIn(true);
 				// Se cargan las notes en la store
-				const notes = await loadNotes(user.uid);
-				dispatch(setNotes(notes));
+				dispatch(startLoadingNotes(user.uid));
 			} else {
 				setIsLoggedIn(false);
 			}
