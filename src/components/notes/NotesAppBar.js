@@ -23,9 +23,12 @@ export const NotesAppBar = () => {
 		}
 	};
 
+	const toDay = new Date().toISOString();
+	const formatDate = toDay.slice(0, 10);
+
 	return (
-		<div className='notes__appbar'>
-			<span>28 de agosto 2020</span>
+		<div className='notes__appbar animate__animated animate__fadeIn'>
+			<span>{formatDate}</span>
 
 			<input
 				id='fileSelector'

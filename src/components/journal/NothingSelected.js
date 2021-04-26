@@ -4,7 +4,7 @@ import React from 'react';
 
 export const NothingSelected = () => {
 	return (
-		<div className='nothing__main-content'>
+		<div className='nothing__main-content animate__animated animate__fadeIn'>
 			<p>
 				Select something
 				<br />
